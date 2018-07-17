@@ -1,0 +1,1 @@
+Sample project to test stock info API
