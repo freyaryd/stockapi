@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title> Stock Earnings Calculator </title>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col col-6 jumbotron">
+        <h2> Stock Earnings Calculator</h2>
+
+        <input type="text" class="form-control" placeholder="Ticker Symbol" id="ticker" aria-describedby="basic-addon1">
+        <input type="text" class="form-control" placeholder="# of Shares" id="quantity" aria-describedby="basic-addon1">
+        
+        <input class="form-control" type="date" value="2018-07-19" id="buy">
+        <input class="form-control" type="date" value="2018-07-19" id="sell">
+
+        <button id="submit" type="button" class="btn btn-warning">Calculate</button>
+
+        <div class="alert alert-success" role="alert" id="holder">
+          $0.00
+        </div>
+
+        <div id="alerts"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="stocks.js"></script>
+</body>
+
+</html>
